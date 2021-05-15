@@ -1,0 +1,29 @@
+{
+  "name": "10-OOP-Team-Profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbarajas4/10-OOP-Team-Profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbarajas4/10-OOP-Team-Profile/issues"
+  },
+  "homepage": "https://github.com/vbarajas4/10-OOP-Team-Profile#readme"
+}
