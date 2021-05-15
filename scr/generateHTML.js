@@ -1,0 +1,113 @@
+const icons = employeeType => {
+    if (employeeType === "manager")
+     return '<i class="fas fa-mug-hot"></i>'
+    else if (employeeType === "engineer")
+     return '<i class="fas fa-glasses"></i>'
+    else if (employee === "intern")
+     return '<i class="fas fa-user-graduate"></i>'
+} 
+
+const mainHTML = data => 
+        
+    `<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">           
+        </head>
+        <body>
+            <nav class="navbar navbar-dark bg-dark mb-5">
+                <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
+            </nav>
+            <div class="container">
+                <div class="row">
+                
+                ${data}
+
+                </div>
+            </div>
+                
+        </body>
+    </html>`;
+                
+    
+    
+const engineercard = employee => 
+
+    `<div class="card border-dark mb-3" style="max-width: 18rem;"> 
+
+        <div class="card-header"> 
+
+            <h4>${employee.name}</h4> 
+
+            ${icons(employee.role)}<h5>${employee.role}</h5> 
+
+        </div> 
+
+        <div class="card-body text-dark">  
+
+            <p class="id">ID: ${employee.id}</p> 
+
+            <p class="email">Email: <a href="mailto: ${employee.email}"></a></p> 
+
+            <p class="school">Github: ${employee.github}</p> 
+
+        </div>  
+
+    </div>`;
+           
+const interncard = employee => 
+
+    `<div class="card border-dark mb-3" style="max-width: 18rem;"> 
+
+        <div class="card-header"> 
+            
+            <h4>${employee.name}</h4> 
+            
+            ${icons(employee.role)}<h5>${employee.role}</h5> 
+            
+        </div> 
+            
+        <div class="card-body text-dark">  
+            
+            <p class="id">ID: ${employee.id}</p> 
+            
+            <p class="email">Email: <a href="mailto: ${employee.email}"></a></p> 
+            
+            <p class="school">School: ${employee.school}</p> 
+            
+        </div>  
+            
+    </div>`;
+            
+const managercard = employee => 
+
+    `<div class="card border-dark mb-3" style="max-width: 18rem;"> 
+
+        <div class="card-header"> 
+            
+            <h4>${employee.name}</h4> 
+            
+            ${icons(employee.role)}<h5>${employee.role}</h5> 
+            
+        </div> 
+            
+        <div class="card-body text-dark">  
+            
+            <p class="id">ID: ${employee.id}</p> 
+            
+            <p class="email">Email: <a href="mailto:${employee.email}"></a></p> 
+            
+            <p class="school">Office Number: ${employee.officeNumber}</p> 
+            
+        </div>  
+            
+    </div>`;
+            
+ 
+
+// export to index
+module.exports = {engineercard, interncard, managercard, mainHTML};
