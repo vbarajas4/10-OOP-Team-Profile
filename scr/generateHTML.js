@@ -1,9 +1,9 @@
 const icons = employeeType => {
-    if (employeeType === "manager")
+    if (employeeType === "Manager")
      return '<i class="fas fa-mug-hot"></i>'
-    else if (employeeType === "engineer")
+    else if (employeeType === "Engineer")
      return '<i class="fas fa-glasses"></i>'
-    else if (employee === "intern")
+    else if (employeeType === "Intern")
      return '<i class="fas fa-user-graduate"></i>'
 } 
 
@@ -43,7 +43,7 @@ const engineercard = employee =>
 
             <h4>${employee.name}</h4> 
 
-            ${icons(employee.role)}<h5>${employee.role}</h5> 
+            ${icons(employee.getRole())}<h5>${employee.getRole()}</h5> 
 
         </div> 
 
@@ -51,7 +51,7 @@ const engineercard = employee =>
 
             <p class="id">ID: ${employee.id}</p> 
 
-            <p class="email">Email: <a href="mailto: ${employee.email}"></a></p> 
+            <p class="email">Email: <a href="mailto: ${employee.email}">${employee.email}</a></p> 
 
             <p class="school">Github: ${employee.github}</p> 
 
@@ -67,7 +67,7 @@ const interncard = employee =>
             
             <h4>${employee.name}</h4> 
             
-            ${icons(employee.role)}<h5>${employee.role}</h5> 
+            ${icons(employee.getRole())}<h5>${employee.getRole()}</h5> 
             
         </div> 
             
@@ -75,7 +75,7 @@ const interncard = employee =>
             
             <p class="id">ID: ${employee.id}</p> 
             
-            <p class="email">Email: <a href="mailto: ${employee.email}"></a></p> 
+            <p class="email">Email: <a href="mailto: ${employee.email}">${employee.email}</a></p> 
             
             <p class="school">School: ${employee.school}</p> 
             
@@ -91,7 +91,7 @@ const managercard = employee =>
             
             <h4>${employee.name}</h4> 
             
-            ${icons(employee.role)}<h5>${employee.role}</h5> 
+            ${icons(employee.getRole())}<h5>${employee.getRole()}</h5> 
             
         </div> 
             
@@ -99,7 +99,7 @@ const managercard = employee =>
             
             <p class="id">ID: ${employee.id}</p> 
             
-            <p class="email">Email: <a href="mailto:${employee.email}"></a></p> 
+            <p class="email">Email: <a href="mailto:${employee.email}">${employee.email}</a></p> 
             
             <p class="school">Office Number: ${employee.officeNumber}</p> 
             

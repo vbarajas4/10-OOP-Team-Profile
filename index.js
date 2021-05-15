@@ -4,27 +4,46 @@ const fs = require("fs");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
-const generateHTML = require("./src/generateHTML");
+const {engineercard, interncard, managercard, mainHTML} = require("./scr/generateHTML");
 
 const employeesArray = [];
 
-
+function startHtml(){
+  const Htmlfile = mainHTML(employeesArray.join(""))
+  fs.writeFile("./dist/index.html", Htmlfile, err => err ? console.log(err) : console.log('success'));
+};
 
 function addEmployee() {
     inquirer.prompt([{
+      type: "list",
+      message: "Please Select Employee Role",
+      choices: [
+        "Engineer",
+        "Intern",
+        "Manager"
+      ],
+      name: "role"
+    }])
+
+    .then(({role}) => {
+        let roleInfo = "";
+        if (role === "Engineer") {
+            roleInfo = "Github username";
+        } else if (role === "Intern") {
+            roleInfo = "school name";
+        } else {
+            roleInfo = "office number";
+        }
+    
+        inquirer.prompt([{
+            type: "input",
+            message: `Enter employees's ${roleInfo}`,
+            name: "roleInfo"
+        },
+    {
       type: "input",
       message: "Enter employee's name",
       name: "name"
-    },
-    {
-        type: "list",
-        message: "Select employee's role",
-        choices: [
-          "Engineer",
-          "Intern",
-          "Manager"
-        ],
-        name: "role"
     },
     {
       type: "input",
@@ -35,22 +54,6 @@ function addEmployee() {
       type:"input",
       message: "Enter employee's email address",
       name: "email"
-    }])
-
-.then(({name, role, id, email}) => {
-    let roleInfo = "";
-    if (role === "Engineer") {
-        roleInfo = "Github username";
-    } else if (role === "Intern") {
-        roleInfo = "school name";
-    } else {
-        roleInfo = "office number";
-    }
-
-    inquirer.prompt([{
-        type: "input",
-        message: `Enter employees's ${roleInfo}`,
-        name: "roleInfo"
     },
     {
         type: "list",
@@ -61,32 +64,34 @@ function addEmployee() {
         ],
         name: "moreEmployee"
     }])
-    
-    .then(({roleInfo, moreEmployee}) => {
-        const newEmployee;
+
+    .then((response) => {
+        console.log(response)
+        console.log(role)
+
+        let employee;
+        let card;
         if (role === "Engineer") {
-            newEmployee = new Engineer(name, id, email, roleInfo);
+            employee = new Engineer (response.name, response.id, response.email, response.roleInfo)
+            card = engineercard(employee);
+        } else if (role === "Manager") {
+            employee = new Manager (response.name, response.id, response.email, response.roleInfo)
+            card = managercard(employee);
         } else if (role === "Intern") {
-            newEmployee = new Intern(name, id, email, roleInfo);
-        } else {
-            newEmployee = new Manager(name, id, email, roleInfo);
+            employee = new Intern (response.name, response.id, response.email, response.roleInfo)
+            card = interncard(employee);
         }
 
-        employees.push(newEmployee);
-        addHTML(newEmployee)
-        .then(() => {
-            if (moreEmployee === "yes") {
+
+        employeesArray.push(card)
+
+            if (response.moreEmployee === "yes") {
                 addEmployee();
             } else {
-                finishHtml();
+                startHtml();
             }
-        })
-
-        .then(response => {   
-            console.log(response)
-            fs.writefile ("./dist/index.html", generateHTML(response), err => err ? console.log(err) : console.log('success'));
-            });
+        });
     
-        })
     })
 }
+addEmployee();
