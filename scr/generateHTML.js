@@ -38,7 +38,7 @@ const mainHTML = data =>
     
 const engineercard = employee => 
 
-    `<div class="card border-dark mb-3" style="max-width: 18rem;"> 
+    `<div class="card ms-3 border-dark mb-3" style="max-width: 18rem; margin-right: 15px;"> 
 
         <div class="card-header"> 
 
@@ -62,7 +62,7 @@ const engineercard = employee =>
            
 const interncard = employee => 
 
-    `<div class="card border-dark mb-3" style="max-width: 18rem;"> 
+    `<div class="card border-dark mb-3" style="max-width: 18rem; margin-right: 15px;"> 
 
         <div class="card-header"> 
             
@@ -86,7 +86,7 @@ const interncard = employee =>
             
 const managercard = employee => 
 
-    `<div class="card border-dark mb-3" style="max-width: 18rem;"> 
+    `<div class="card border-dark mb-3" style="max-width: 18rem; margin-right: 15px;"> 
 
         <div class="card-header"> 
             
