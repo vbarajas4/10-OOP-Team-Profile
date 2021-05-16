@@ -1,8 +1,8 @@
 # 10-OOP-Team-Profile
 
-[Team Profile Application Video Part 1](https://drive.google.com/file/d/1Z6Z4gh0tYQu6QJ3Iylpqb3AfOBagavs8/view)
-[Team Profile Application Video Part 2](https://drive.google.com/file/d/1HM_u4rnE73gXcFQALYVsfiUT6x7_qxHq/view)
-[Team Profile Application Video Part 3](https://drive.google.com/file/d/1s9tP2GXIVzUjj3-pFf9cVIeCK2VXAXbX/view)
+ - [Team Profile Application Video Part 1](https://drive.google.com/file/d/1Z6Z4gh0tYQu6QJ3Iylpqb3AfOBagavs8/view)
+ - [Team Profile Application Video Part 2](https://drive.google.com/file/d/1HM_u4rnE73gXcFQALYVsfiUT6x7_qxHq/view)
+ - [Team Profile Application Video Part 3](https://drive.google.com/file/d/1s9tP2GXIVzUjj3-pFf9cVIeCK2VXAXbX/view)
 
 
 ## User Story
