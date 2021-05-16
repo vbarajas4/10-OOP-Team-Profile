@@ -20,7 +20,7 @@ const mainHTML = data =>
             <title>Team Profile</title>           
         </head>
         <body>
-            <nav class="navbar navbar-dark bg-dark mb-5">
+            <nav class="navbar navbar-dark bg-danger mb-5">
                 <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
             </nav>
             <div class="container">
@@ -38,9 +38,9 @@ const mainHTML = data =>
     
 const engineercard = employee => 
 
-    `<div class="card ms-3 border-dark mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+    `<div class="card border-success mb-3" style="max-width: 18rem; margin-right: 15px;"> 
 
-        <div class="card-header"> 
+        <div class="card-header" style="background-color: darkseagreen;"> 
 
             <h4>${employee.name}</h4> 
 
@@ -62,9 +62,9 @@ const engineercard = employee =>
            
 const interncard = employee => 
 
-    `<div class="card border-dark mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+    `<div class="card border-warning mb-3" style="max-width: 18rem; margin-right: 15px;"> 
 
-        <div class="card-header"> 
+        <div class="card-header" style="background-color: goldenrod;"> 
             
             <h4>${employee.name}</h4> 
             
@@ -86,9 +86,9 @@ const interncard = employee =>
             
 const managercard = employee => 
 
-    `<div class="card border-dark mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+    `<div class="card border-primary mb-3" style="max-width: 18rem; margin-right: 15px;"> 
 
-        <div class="card-header"> 
+        <div class="card-header" style="background-color: cornflowerblue;"> 
             
             <h4>${employee.name}</h4> 
             
