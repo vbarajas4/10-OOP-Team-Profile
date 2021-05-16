@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+            <title>Team Profile</title>           
+        </head>
+        <body>
+            <nav class="navbar navbar-dark bg-danger mb-5">
+                <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
+            </nav>
+            <div class="container">
+                <div class="row">
+                
+                <div class="card border-success mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+
+        <div class="card-header" style="background-color: darkseagreen;"> 
+
+            <h4>Shannon</h4> 
+
+            <i class="fas fa-glasses"></i><h5>Engineer</h5> 
+
+        </div> 
+
+        <div class="card-body text-dark">  
+
+            <p class="id">ID: 1</p> 
+
+            <p class="email">Email: <a href="mailto: Shannon123@gmail.com">Shannon123@gmail.com</a></p> 
+
+            <p class="school">Github: Shannon123</p> 
+
+        </div>  
+
+    </div><div class="card border-success mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+
+        <div class="card-header" style="background-color: darkseagreen;"> 
+
+            <h4>Rose</h4> 
+
+            <i class="fas fa-glasses"></i><h5>Engineer</h5> 
+
+        </div> 
+
+        <div class="card-body text-dark">  
+
+            <p class="id">ID: 3</p> 
+
+            <p class="email">Email: <a href="mailto: rose12@gmail.com">rose12@gmail.com</a></p> 
+
+            <p class="school">Github: Rose12</p> 
+
+        </div>  
+
+    </div><div class="card border-warning mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+
+        <div class="card-header" style="background-color: goldenrod;"> 
+            
+            <h4>Bella</h4> 
+            
+            <i class="fas fa-user-graduate"></i><h5>Intern</h5> 
+            
+        </div> 
+            
+        <div class="card-body text-dark">  
+            
+            <p class="id">ID: 2</p> 
+            
+            <p class="email">Email: <a href="mailto: bella321@gmail.com">bella321@gmail.com</a></p> 
+            
+            <p class="school">School: UCSD</p> 
+            
+        </div>  
+            
+    </div><div class="card border-warning mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+
+        <div class="card-header" style="background-color: goldenrod;"> 
+            
+            <h4>Via</h4> 
+            
+            <i class="fas fa-user-graduate"></i><h5>Intern</h5> 
+            
+        </div> 
+            
+        <div class="card-body text-dark">  
+            
+            <p class="id">ID: 4</p> 
+            
+            <p class="email">Email: <a href="mailto: via19@gmail.com">via19@gmail.com</a></p> 
+            
+            <p class="school">School: UCSD</p> 
+            
+        </div>  
+            
+    </div><div class="card border-primary mb-3" style="max-width: 18rem; margin-right: 15px;"> 
+
+        <div class="card-header" style="background-color: cornflowerblue;"> 
+            
+            <h4>Rox</h4> 
+            
+            <i class="fas fa-mug-hot"></i><h5>Manager</h5> 
+            
+        </div> 
+            
+        <div class="card-body text-dark">  
+            
+            <p class="id">ID: 5</p> 
+            
+            <p class="email">Email: <a href="mailto:rox323@gmail.com">rox323@gmail.com</a></p> 
+            
+            <p class="school">Office Number: 323-555-0505</p> 
+            
+        </div>  
+            
+    </div>
+
+                </div>
+            </div>
+                
+        </body>
+    </html>
