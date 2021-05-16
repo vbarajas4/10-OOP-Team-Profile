@@ -1,24 +1,20 @@
 # 10-OOP-Team-Profile
 
-## Your Task
+[Team Profile Application Video Part 1](https://drive.google.com/file/d/1Z6Z4gh0tYQu6QJ3Iylpqb3AfOBagavs8/view)
+[Team Profile Application Video Part 2](https://drive.google.com/file/d/1HM_u4rnE73gXcFQALYVsfiUT6x7_qxHq/view)
+[Team Profile Application Video Part 3](https://drive.google.com/file/d/1s9tP2GXIVzUjj3-pFf9cVIeCK2VXAXbX/view)
 
-Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
-
-Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project.
-
-> **Note**: There is no starter code for this assignment.
 
 ## User Story
 
-```md
+```
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
 ```
 
-## Acceptance Criteria
-
-```md
+## Project Outline
+```
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
@@ -38,195 +34,6 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-## Mock-Up
-
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
-
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
-
-The styling in the image is just an example, so feel free to add your own.
-
-## Getting Started
-
-This homework will combine many of the skills we've covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help get started.
-
-Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
-
-```bash
-node index.js
-```
-
-It is recommended that you start with a directory structure that looks like the following example:
-
-```md
-__tests__/			// jest tests
-  Employee.test.js
-  Engineer.test.js
-  Intern.test.js
-  Manager.test.js
-dist/               // rendered output (HTML) and CSS style sheet
-lib/				// classes
-src/				// template helper code
-index.js			// runs the application
-```
-
-The application must include `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes (in the `_tests_` directory) must ALL pass.
-
-The first class is an `Employee` parent class with the following properties and methods:
-
-* `name`
-
-* `id`
-
-* `email`
-
-* `getName()`
-
-* `getId()`
-
-* `getEmail()`
-
-* `getRole()`&mdash;returns `'Employee'`
-
-The other three classes will extend `Employee`.
-
-In addition to `Employee`'s properties and methods, `Manager` will also have the following:
-
-* `officeNumber`
-
-* `getRole()`&mdash;overridden to return `'Manager'`
-
-In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
-
-* `github`&mdash;GitHub username
-
-* `getGithub()`
-
-* `getRole()`&mdash;overridden to return `'Engineer'`
-
-In addition to `Employee`'s properties and methods, `Intern` will also have the following:
-
-* `school`
-
-* `getSchool()`
-
-* `getRole()`&mdash;overridden to return `'Intern'`
-
-Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Deliverables: 15%
-
-* A sample HTML file generated using the application must be submitted.
-
-* Your GitHub repository containing your application code.
-
-
-### Walkthrough Video: 32%
-
-* A walkthrough video that demonstrates the functionality of the Team Profile Generator and passing tests must be submitted, and a link to the video should be included in your README file.
-
-* The walkthrough video must show all four tests passing from the command line.
-
-* The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
-* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-* The walkthrough video must demonstrate a generated HTML file that matches the user input.
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
-
-	* Uses the [Jest package](https://www.npmjs.com/package/jest) for a suite of unit tests.
-
-  * The application must have `Employee`, `Manager`, `Engineer`, and `Intern` classes.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a high-quality readme with description and a link to a walkthrough video.
-
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video that demonstrates the functionality of the application and passing tests.
-
-* A sample HTML file generated using your application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
-
-# 10 OOP - Team Profile
-
-[Readme Application Video](   )
-
-
-## User Story
-
-```
-AS A 
-I WANT 
-SO THAT 
-```
-
-## Project Outline
-
-
-
-
-## Screenshots of Application
-
-
-
-
-
-## Important Links
-
- - [GitHub Repository Link](https://github.com/vbarajas4/09-Readme-Generator)
- - [Readme Generator Video Link](https://drive.google.com/file/d/1Tk6wROVgmy6BrzfjvElCg-t6m6tWlKHQ/view)
- 
-## Framework and Technologies
-
-- VS Code
-- node.js
-- npm inquirer package installation
-
-
-
-Start doing like this your generator but add screenshot Important links and framework and technologies to it 
-
-[![badge](https://img.shields.io/badge/license-MIT-yellow.svg)](#license)
-
-
-## Description
-
-
-## Table of Contents
- - [Installation](#installation)
- - [Usage](#usage)
- - [Tests](#tests)
- - [Contributing](#contributing)
- - [License](#license)
- - [Questions](#questions)
-
 ## Installation
 For this application you will need VS Code, node.js, npm inquirer package, and npm i jest.
 
@@ -235,6 +42,37 @@ Using the command node index.js in your terminal, the user will be prompted with
 
 ## Tests
 jest 
+ - Employee.test.js
+ - Engineer.test.js
+ - Intern.test.js
+ - Manager.test.js
+
+## Screenshots of Application
+
+<img width="1154" alt="Team-Profile Cards" src="https://user-images.githubusercontent.com/79430431/118387710-c6ec4800-b5d4-11eb-936e-315f77aa9d1b.png">
+
+<img width="1109" alt="Team-Profile-Code" src="https://user-images.githubusercontent.com/79430431/118387718-dbc8db80-b5d4-11eb-9e73-7c6fcfeb7de0.png">
+
+<img width="1487" alt="Team-Profile-Code2" src="https://user-images.githubusercontent.com/79430431/118387727-eaaf8e00-b5d4-11eb-86a0-7c1a0496b1e7.png">
+
+<img width="1085" alt="Team-Profile-Code3" src="https://user-images.githubusercontent.com/79430431/118387741-fef38b00-b5d4-11eb-9db6-cbffde5dcecd.png">
+
+<img width="1452" alt="Team-Profile-Code4" src="https://user-images.githubusercontent.com/79430431/118387751-0ca91080-b5d5-11eb-90a0-5c02b0d2aa9c.png">
+
+
+## Important Links
+
+ - [GitHub Repository Link](https://github.com/vbarajas4/10-OOP-Team-Profile)
+ - [Team Profile Application Video Part 1](https://drive.google.com/file/d/1Z6Z4gh0tYQu6QJ3Iylpqb3AfOBagavs8/view)
+ - [Team Profile Application Video Part 2](https://drive.google.com/file/d/1HM_u4rnE73gXcFQALYVsfiUT6x7_qxHq/view)
+ - [Team Profile Application Video Part 3](https://drive.google.com/file/d/1s9tP2GXIVzUjj3-pFf9cVIeCK2VXAXbX/view)
+ 
+## Framework and Technologies
+
+- VS Code App
+- node.js (command used: node index.js)
+- [Inquirer](https://www.npmjs.com/package/inquirer) 
+- [Jest](https://www.npmjs.com/package/jest) (command used: npm test)
 
 ## Contributing
 This project is not accepting contributors at this moment.
